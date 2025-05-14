@@ -1,10 +1,17 @@
-# Qualtrics AI Chatbot for Emotion Regulation Research
+# Embedding AI Chatbots in Qualtrics for Social Science Research 
 
-A specialized chatbot implementation for Qualtrics surveys that facilitates emotion regulation discussions using cognitive reappraisal techniques.
+A specialized chatbot implementation for Qualtrics surveys.
 
 ## Overview
 
-This project implements an interactive chatbot within Qualtrics surveys that helps participants process workplace anger experiences through cognitive reappraisal strategies. The chatbot uses OpenAI's GPT-4 API to provide personalized, context-aware responses while maintaining specific interaction styles based on research requirements.
+This project implements an interactive chatbot within Qualtrics surveys that helps participants process workplace anger experiences through cognitive reappraisal strategies. The chatbot uses OpenAI's GPT-4o API to provide personalized, context-aware responses while maintaining specific interaction styles based on research requirements.
+
+## Citation
+
+If you use this code in your research, please cite our working paper, which describes the implements for this code:
+```
+Li, H., & SHIH, M. (2025). Managing Anger: Enhancing AI-driven Cognitive Reappraisal Through Emotional Validation. Retrieved from osf.io/a3sxf_v1
+```
 
 ## Features
 
@@ -20,41 +27,15 @@ This project implements an interactive chatbot within Qualtrics surveys that hel
 
 ### Dependencies
 - Qualtrics Survey Platform
-- OpenAI API (GPT-4)
+- OpenAI API (GPT-4o)
 - JavaScript (ES6+)
-
-### Key Components
-
-1. **Chat Interface**
-   - Custom-styled message bubbles
-   - Input field with Enter key support
-   - Send button with loading states
-   - Auto-scrolling chat window
-
-2. **AI Integration**
-   - OpenAI GPT-4 API integration
-   - Context-aware conversations
-   - Response sanitization
-   - Error handling
-
-3. **Chatbot Personalities**
-   - `host1`: AI-disclosed, neutral tone
-   - `host2`: Human-presenting, neutral tone
-   - `host3`: AI-disclosed, empathetic tone
-   - `host4`: Human-presenting, empathetic tone
-
-## Setup Instructions
 
 ### 1. Qualtrics Configuration
 
 1. Create a new question in your Qualtrics survey
 2. Set the question type to "Text Entry"
 3. Add the JavaScript code to the question
-4. Set up the following embedded data fields:
-   - `userRecallIncident`
-   - `chatbotType`
-   - `chatbotName`
-   - `UserPreferredName`
+4. Set up the embedded data fields
 
 ### 2. API Configuration
 
@@ -65,18 +46,14 @@ Replace the API key in the code with your own OpenAI API key:
 
 ### 3. Customize Prompts
 
-Modify the `userPrompt` variables for each host type to adjust:
-- Emotion regulation strategies
-- Language style
-- Response tone
-- Character limits
+Modify the `userPrompt` variables for each host type to adjust the specific prompt you wish to set for your chatbots
 
 ## Usage
 
 1. Participants enter their workplace anger experience
 2. The chatbot initiates conversation based on the selected host type
 3. Participants engage in a guided discussion about their experience
-4. After 4 exchanges, participants can continue chatting or exit
+4. After 5 exchanges, participants can continue chatting or exit
 5. Conversation history is saved to Qualtrics embedded data
 
 ## Code Structure
@@ -99,68 +76,10 @@ Modify the `userPrompt` variables for each host type to adjust:
 - Adding request validation
 - Using environment variables for sensitive data
 
-## Research Applications
-
-This chatbot is designed for research studies investigating:
-- Emotion regulation effectiveness
-- Human-AI interaction patterns
-- Cognitive reappraisal strategies
-- Workplace anger management
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## Authors
 
-- XXXX XXXX - *Initial work* - [XXXX](https://github.com/XXXX)
-
-## Acknowledgments
-
-- OpenAI for GPT-4 API
-- Qualtrics for survey platform
-- Research team members at XXXX University
-- Study participants from XXXX
-
-## Support
-
-For questions or issues:
-- Open an issue on GitHub
-- Contact: XXXX@XXXX.edu
-- Documentation: [Wiki](https://github.com/XXXX/qualtrics-chatbot/wiki)
-
-## Version History
-
-- v1.0.0 - Initial release (XXXX/XX/XX)
-  - Basic chat functionality
-  - Four chatbot personalities
-  - Emotion regulation features
-
-## Future Enhancements
-
-- [ ] Implement server-side API proxy
-- [ ] Add multilingual support
-- [ ] Enhance error recovery
-- [ ] Add conversation analytics
-- [ ] Implement adaptive response timing
-- [ ] Add participant feedback collection
-
-## Citation
-
-If you use this code in your research, please cite:
-```
-XXXX, X., XXXX, X., & XXXX, X. (XXXX). Qualtrics AI Chatbot for Emotion 
-Regulation Research. GitHub. https://github.com/XXXX/qualtrics-chatbot
-```
+- Hanqiu Li - (https://github.com/Hanqiu0718)
 
 ## Research Ethics
 
-This project was approved by the Institutional Review Board at XXXX University (Protocol #XXXX-XXXX). All participants provided informed consent before engaging with the chatbot.
+This project was approved by the Institutional Review Board at UCLA. All participants provided informed consent before engaging with the chatbot.
