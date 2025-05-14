@@ -79,6 +79,7 @@ Modify the `userPrompt` variables for each host type to adjust the specific prom
 ## Authors
 
 - Hanqiu Li - (https://github.com/Hanqiu0718)
+- Contact info: hanqiu.li.phd@anderson.ucla.edu
 
 ## Research Ethics
 
