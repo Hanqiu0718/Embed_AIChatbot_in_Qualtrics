@@ -1,12 +1,11 @@
 /**
- * Qualtrics AI Chatbot for Emotion Regulation Research
+ * Embed AI Chatbot in Qualtrics for Social Science Research Purposes
  * Version: 1.0.0
- * Author: XXXX XXXX
- * Institution: XXXX University
- * Department: XXXX Department
- * Contact: XXXX@XXXX.edu
- * Description: Implements an interactive chatbot within Qualtrics surveys for emotion regulation discussions
- * 
+ * Author: Hanqiu Li
+ * Institution: UCLA Anderson School of Management
+ * Contact: hanqiu.li.phd@anderson.ucla.edu
+ * Description: Implements an interactive chatbot within Qualtrics surveys
+ *
  * IMPORTANT: Replace the API key with your own and implement proper security measures
  * Never expose API keys in production client-side code
  */
